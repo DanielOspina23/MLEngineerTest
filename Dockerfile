@@ -6,7 +6,7 @@ RUN mkdir -p ./MLTest
 WORKDIR ./MLTest
 
 #Copy requirment.txt
-COPY requirements.txt ./io
+COPY requirements.txt ./
 
 # Install any needed packages specified in requirements.txt
 

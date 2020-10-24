@@ -20,6 +20,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["PROPAGATE_EXCEPTIONS"] = settings.PROPAGATE_EXCEPTIONS
 app.config['SQLALCHEMY_POOL_RECYCLE'] = 120
 
+
 # Logs
 logging_mode = logging.INFO
 logging.basicConfig(format=settings.LOG_PATTERN, level=logging_mode)
