@@ -6,14 +6,14 @@ RUN mkdir -p ./MLTest
 WORKDIR ./MLTest
 
 #Copy requirment.txt
-COPY requirements.txt ./
+COPY requirements.txt ./io
 
 # Install any needed packages specified in requirements.txt
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-# Copy the current directory contents into the container at /user-segmentation
+# Copy the current directory contents into the container
 COPY . ./
 
 # Make port 8080 available to the world outside this container

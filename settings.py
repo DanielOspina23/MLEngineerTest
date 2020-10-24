@@ -18,7 +18,7 @@ MODEL_PATH = f'./models/modelTest.pickle'
 # PostgreSQL
 PG_USER = os.getenv('PG_USER', 'postgres')
 PG_PASSWORD = os.getenv('PG_PASSWORD', 'postgres')
-PG_HOST = os.getenv('PG_HOST', 'localhost')
+PG_HOST = os.getenv('PG_HOST', 'db')
 PG_PORT = os.getenv('PG_PORT', 5432)
 PG_DATABASE = os.getenv('PG_DATABASE', 'postgres')
 
