@@ -41,23 +41,23 @@ Ejecutar el siguiente comando:
 docker-compose build
 ```
 
-Después de construída la imagen, correr las migraciones para tener una base de datos local donde se guardará la información.
+Después de construída la imagen, levantar el servicio para crear la base dedatos.
+
+```
+docker-compose up -d
+```
+
+Una vez levantado el servicio, correr las migraciones para tener una tabla en la base de datos local donde se guardará la información.
 
 ```
 docker-compose run web alembic upgrade head
-```
-
-Por último, levantar el servidor:
-
-```
-docker-compose up
 ```
 
 Una vez ejecutados estos comandos, el servidor debería estar funcionando de forma local.
 
 ## Ejecutando una prueba 🔩
 
-En el siguiente link pueden ver una documentación del petición y de la respuesta de la API. [Documentación de la API](https://app.swaggerhub.com/apis-docs/Prueba77/TakenProbability/1.0.0#/).
+En el siguiente link pueden ver una documentación de la petición y de la respuesta de la API. [Documentación de la API](https://app.swaggerhub.com/apis-docs/Prueba77/TakenProbability/1.0.0#/).
 
 Sin embargo, a continuación se muestra un ejemplo de la petición y de la respuesta. 
 
