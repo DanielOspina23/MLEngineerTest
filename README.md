@@ -101,7 +101,27 @@ El servidor debe responder de la siguiente forma:
 {"1111": 0.9440765380859375, "1112": 0.9328768849372864, "1113": 0.6267786026000977}
 ```
 
-## Construido con 🛠️
+Para consultar que se hayan agregado los campos a la base de datos, se puede consultar de la siguiente manera:
+
+Primero, con el servicio levantado, en otro terminal ejecutar el siguiente comando:
+
+```
+docker ps
+```
+
+Copiar el nombre de la imagen de la base de datos y ejecutar el siguiente comando para acceder a la base de datos:
+
+```
+docker exec -it nombre_de_la_imagen psql -U postgres
+```
+
+Ahora se puede escribir un query para consultar la información:
+
+```
+select * from taken_order;
+```
+
+## Construído con 🛠️
 
 El proyecto fue construído con las siguientes herramientas.
 
